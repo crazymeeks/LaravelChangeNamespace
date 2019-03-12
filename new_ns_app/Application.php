@@ -11,7 +11,7 @@ class Application extends LaravelApplication
      * 
      * @var string
      */
-    protected $namespace = 'DteApp\\';
+    protected $namespace = 'NewNS\\';
 
     /**
      * Get the path to the application "app" directory
@@ -22,6 +22,6 @@ class Application extends LaravelApplication
      */
     public function path($path = '')
     {
-        return $this->basePath . DIRECTORY_SEPARATOR . 'dteapp' . DIRECTORY_SEPARATOR . 'app' . ($path ? DIRECTORY_SEPARATOR . $path : $path);
+        return $this->basePath . DIRECTORY_SEPARATOR . 'new_ns_app' . DIRECTORY_SEPARATOR . 'app' . ($path ? DIRECTORY_SEPARATOR . $path : $path);
     }
 }
